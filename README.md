@@ -9,8 +9,8 @@
 *   Miguel Barrios
 *   Daniel Valenzuela
 
-Lenguajes y Compiladores
-UNEG
+Lenguajes y Compiladores <br>
+UNEG <br>
 
 ---
 *Nota: Este proyecto tiene fines estrictamente académicos.*
