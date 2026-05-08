@@ -1,4 +1,4 @@
-# Team Hot Wheels - Repositorio Académico
+## Team Hot Wheels - Repositorio Académico
 
 ### 🏎️ Eslogan
 *"Código limpio, motores eficientes, ingeniería sin frenos."*
