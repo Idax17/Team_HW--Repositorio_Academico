@@ -33,3 +33,28 @@ P:
 ```
 
 ---
+## Por qué es un problema para parsers LL
+
+Un parser de descenso recursivo implementa cada no terminal como una función:
+
+```python
+def E():
+    E()       # ← llama a E() antes de consumir ningún token
+    match('+')
+    T()
+```
+
+Al llamar a `E()`, lo primero que hace es llamar a `E()` de nuevo,
+que a su vez llama a `E()`, y así hasta agotar la pila → **bucle infinito**.
+
+Los parsers **LL(k)** no pueden manejar gramáticas con recursión izquierda.
+Es obligatorio eliminarla antes de construir el analizador.
+
+---
+
+## Identificación del patrón
+
+Para la producción `E → E + T | T` se identifican:
+
+- **Producción recursiva**: `E → E + T`  → extrae `α = + T`
+- **Producción base** (no recursiva): `E → T`  → extrae `β = T`
