@@ -42,3 +42,38 @@ def tiene_recursion_izquierda(no_terminal, alternativas):
     """Retorna True si alguna alternativa empieza por el propio no_terminal."""
     return any(alt and alt[0] == no_terminal for alt in alternativas)
 
+
+def eliminar_recursion_izquierda_directa(no_terminal, alternativas):
+    """
+    Aplica el algoritmo estándar:
+      A -> A α1 | A α2 | β1 | β2
+    se transforma en:
+      A  -> β1 A' | β2 A'
+      A' -> α1 A' | α2 A' | ε
+    """
+    recursivas = []   # las α (sin el A inicial)
+    no_recursivas = []  # las β
+
+    for alt in alternativas:
+        if alt and alt[0] == no_terminal:
+            recursivas.append(alt[1:])      # quita el A del frente -> es α
+        else:
+            no_recursivas.append(alt)        # ya es β
+
+    nuevo_nt = no_terminal + "'"
+
+    # A -> β1 A' | β2 A' | ...
+    nuevas_A = [beta + [nuevo_nt] for beta in no_recursivas]
+
+    # A' -> α1 A' | α2 A' | ... | ε
+    nuevas_Aprima = [alpha + [nuevo_nt] for alpha in recursivas]
+    nuevas_Aprima.append(["ε"])
+
+    return nuevo_nt, nuevas_A, nuevas_Aprima
+
+
+def imprimir_gramatica(gramatica, titulo):
+    print(f"\n--- {titulo} ---")
+    for nt, alternativas in gramatica.items():
+        derecha = "  |  ".join(" ".join(alt) for alt in alternativas)
+        print(f"  {nt}  ->  {derecha}")
