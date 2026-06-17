@@ -10,3 +10,5 @@ Se presentan e ilustran **3 patologías** distintas:
 | 3.1 | Ambigüedad | `3.1-ambiguedad/` |
 | 3.2 | Recursividad por la izquierda | `3.2-recursividad-izquierda/` |
 | 3.3 | Factorización por la izquierda | `3.3-factorizacion/` |
+
+Se necesita Python 3.14 y ejecutarlo en Visual Studio Code o CMD/Powershell
