@@ -1,17 +1,12 @@
-## Team Hot Wheels - Repositorio Académico
+PGN Chess Syntax Validator (C++) ♟️
+Este repositorio contiene un validador sintáctico en C++ para un subconjunto simplificado de la notación PGN (Portable Game Notation) de ajedrez, implementado mediante un Autómata Finito Determinístico (AFD).
 
-### 🏎️ Eslogan
-*"Código limpio, motores eficientes, ingeniería sin frenos."*
+🚀 Instalación y Compilación
 
-### 👥 Integrantes (Sección 1)
-*   Iván Hernández (Líder) - (Idax17)
-*   Miguel Gomez      -      (maikolg30 y miguelgm8)
-*   Miguel Barrios      -    (miguel5693)
-*   Daniel Valenzuela    -   (SonixCDOWO)
+Compilar con cualquier compilador C++11 o superior (GCC, Clang, MSVC):
+g++ -std=c++11 main.cpp -o validador_pgn
 
-Lenguajes y Compiladores <br>
-UNEG <br>
+Ejecutar el programa:
 
----
-*Nota: Este proyecto tiene fines estrictamente académicos.*<br>
-*Nota 2: Miguel Gomez posee dos cuentas de Github que utilizó en este repositorio*
+Linux/macOS: ./validador_pgn
+Windows: validador_pgn.exe
