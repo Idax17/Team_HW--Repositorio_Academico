@@ -13,5 +13,5 @@ Lenguajes y Compiladores <br>
 UNEG <br>
 
 ---
-*Nota: Este proyecto tiene fines estrictamente académicos.*
+*Nota: Este proyecto tiene fines estrictamente académicos.*<br>
 *Nota 2: Miguel Gomez posee dos cuentas de Github que utilizó en este repositorio*
