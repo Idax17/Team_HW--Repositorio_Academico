@@ -1,0 +1,7 @@
+; === EJEMPLO TIPO 0: LENGUAJES LIBRES ===
+; Lógica abstracta
+<S>       ::= <A> <B>
+<A> <B>   ::= "c"
+<A> <B> <C> ::= "x"
+<B> <C>   ::= <C> <B>
+
