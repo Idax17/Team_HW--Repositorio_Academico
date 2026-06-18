@@ -1,4 +1,0 @@
-; === EJEMPLO TIPO 1: SENSIBLE AL CONTEXTO ===
-; El No Terminal <A> depende de tener la 'a' literal a su izquierda
-<S>     ::= a <A> b
-a <A>   ::= a a c
