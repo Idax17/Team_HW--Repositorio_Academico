@@ -17,3 +17,11 @@ Caso 3: Estructura de Retorno Vacío ("c a t")
     a
     t
     - Resultado: La tortuga guarda su origen, avanza trazando y regresa instantáneamente de forma invisible al punto de partida, demostrando el comportamiento de la Pila.
+
+Caso 4: Bifurcación Arbórea ("a c g a t a")
+    - Derivación: Secuencia compleja que inserta una rama secundaria oblicua preservando el eje del tronco principal.
+    - Resultado: Crecimiento fractal de flora artificial (óptimo con angulo_giro=45).
+
+Caso 5: Esquina Isométrica / Proyección de Cubo ("a g a c a g t")
+    - Derivación: Apertura de un contexto ramificado de perspectiva tridimensional tras definir la base del vértice de un cubo.
+    - Resultado: Proyección espacial consistente sin alterar la continuidad de los contornos generales.
