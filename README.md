@@ -14,3 +14,4 @@ UNEG <br>
 
 ---
 *Nota: Este proyecto tiene fines estrictamente académicos.*
+*Nota 2: Miguel Gomez posee dos cuentas de Github que utilizó en este repositorio*
