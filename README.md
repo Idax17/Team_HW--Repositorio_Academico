@@ -7,7 +7,7 @@
 *   Iván Hernández (Líder)   (Idax17)
 *   Miguel Gomez             (maikolg30 y miguelgm8)
 *   Miguel Barrios           (miguel5633)
-*   Daniel Valenzuela        (Sonic)
+*   Daniel Valenzuela        (SonixCDOWO)
 
 Lenguajes y Compiladores <br>
 UNEG <br>
