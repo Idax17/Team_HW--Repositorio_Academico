@@ -1,4 +1,0 @@
-; === EJEMPLO TIPO 3: IDENTIFICADORES REGULARES ===
-; Cumple la linealidad estricta (Terminal seguido de No Terminal o Terminal solo)
-<S>      ::= "a" <Resto> | "b" <Resto> | "a" | "b"
-<Resto>  ::= "a" <Resto> | "b" <Resto> | "1" <Resto> | "2" <Resto> | "a" | "b" | "1" | "2"
