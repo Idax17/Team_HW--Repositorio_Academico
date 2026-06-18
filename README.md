@@ -4,10 +4,10 @@
 *"Código limpio, motores eficientes, ingeniería sin frenos."*
 
 ### 👥 Integrantes (Sección 1)
-*   Iván Hernández (Líder)
-*   Miguel Gomez
-*   Miguel Barrios
-*   Daniel Valenzuela
+*   Iván Hernández (Líder)   (Idax17)
+*   Miguel Gomez             (maikolg30 y miguelgm8)
+*   Miguel Barrios           (miguel5633)
+*   Daniel Valenzuela        (Sonic)
 
 Lenguajes y Compiladores <br>
 UNEG <br>
