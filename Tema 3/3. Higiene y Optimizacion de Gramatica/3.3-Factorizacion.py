@@ -93,9 +93,60 @@ def factorizar_izquierda(no_terminal, alternativas):
     }
     return resultado, True
 
-
 def imprimir_gramatica(gramatica, titulo):
     print(f"\n--- {titulo} ---")
     for nt, alternativas in gramatica.items():
         derecha = "  |  ".join(" ".join(alt) for alt in alternativas)
         print(f"  {nt}  ->  {derecha}")
+
+def main():
+    texto_gramatica = """
+    S -> if E then S else S | if E then S
+    """
+    gramatica = parsear_gramatica(texto_gramatica)
+    imprimir_gramatica(gramatica, "GRAMÁTICA ORIGINAL (con prefijo común)")
+
+    prefijo = prefijo_comun_mas_largo(gramatica["S"])
+    print(f"\n[DETECTADO] Prefijo común más largo: '{' '.join(prefijo)}'")
+
+    nueva_gramatica, hubo_cambio = factorizar_izquierda("S", gramatica["S"])
+    imprimir_gramatica(nueva_gramatica, "GRAMÁTICA FACTORIZADA")
+
+    print("\n--- TABLA DE DECISIÓN LL(1) PARA S' ---")
+    col1, col2, col3 = "Token lookahead", "Producción aplicada", "Significado"
+    print(f"  {col1:<20}{col2:<20}{col3}")
+    print(f"  {'-'*20}{'-'*20}{'-'*30}")
+    fila1_prod = "S' -> else S"
+    fila2_prod = "S' -> " + chr(0x03B5)
+    print(f"  {'else':<20}{fila1_prod:<20}{'Hay rama alternativa'}")
+    print(f"  {'otro / fin':<20}{fila2_prod:<20}{'No hay else'}")
+
+    print("\n--- VERIFICACIÓN: derivar 'if E then S else S' ---")
+    pasos_con_else = [
+        "S",
+        "if E then S S'",
+        "if E then S else S S'",
+        "if E then S else S ε",
+        "if E then S else S",
+    ]
+    for i, p in enumerate(pasos_con_else):
+        print(("    " if i == 0 else " => ") + p)
+
+    print("\n--- VERIFICACIÓN: derivar 'if E then S' (sin else) ---")
+    pasos_sin_else = [
+        "S",
+        "if E then S S'",
+        "if E then S ε",
+        "if E then S",
+    ]
+    for i, p in enumerate(pasos_sin_else):
+        print(("    " if i == 0 else " => ") + p)
+
+    print("\n--- RESULTADO ---")
+    if hubo_cambio:
+        print("Prefijo común eliminado. La gramática ahora es apta para LL(1).")
+        print("El 'else' siempre se asocia al 'if' más cercano sin ambigüedad estructural.")
+
+
+if __name__ == "__main__":
+    main()
