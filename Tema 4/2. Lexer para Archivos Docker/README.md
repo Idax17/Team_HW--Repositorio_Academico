@@ -1,0 +1,1 @@
+Para ejecutar el analizador léxico, coloque todos los archivos Dockerfile y los lexer_docker.py en una carpeta, abra una terminal y ejecute python3 lexer_docker.py. La ejecución de los .py dependeran de cual archivo Dockerfile quiere analizar, ejemplo, si quiere analizar el Dockerfile1 ejecute lexer_docker1.py, si quiere analizar Dockerfile 2, ejecute el lexer_docker2.py.
