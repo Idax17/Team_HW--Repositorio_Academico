@@ -25,7 +25,7 @@ rust_lexer/
 
 ## Requisitos
 
-- Sistema operativo tipo Linux (probado en Ubuntu 24.04).
+- Sistema operativo tipo Linux (probado en Ubuntu 24.04) o WSL (Windows Subsystem for Linux en Ubuntu 24.04).
 - `flex` (generador léxico).
 - `gcc` (compilador de C).
 
