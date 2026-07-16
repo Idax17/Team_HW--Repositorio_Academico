@@ -1,0 +1,15 @@
+TOKEN: RULE, Lexema: rule
+TOKEN: IDENTIFICADOR, Lexema: Deteccion_Malware
+TOKEN: LBRACE, Lexema: {
+TOKEN: STRINGS_SEC, Lexema: strings:
+TOKEN: STRING_VAR, Lexema: cadena1
+TOKEN: ASIGNACION, Lexema: =
+TOKEN: TEXT_STRING, Lexema: "cmd.exe /c"
+TOKEN: STRING_VAR, Lexema: $hex_firma
+TOKEN: ASIGNACION, Lexema: =
+TOKEN: HEX_STRING, Lexema: { E2 34 A1 C8 23 FB }
+TOKEN: CONDITION_SEC, Lexema: condition:
+TOKEN: STRING_VAR, Lexema: cadena1
+TOKEN: OP_OR, Lexema: or
+TOKEN: STRING_VAR, Lexema: hex_firma
+TOKEN: RBRACE, Lexema: }
