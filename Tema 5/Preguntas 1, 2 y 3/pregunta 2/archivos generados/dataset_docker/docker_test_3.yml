@@ -1,6 +1,0 @@
-networks:
-  red_simulada_3:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.18.3.0/24
