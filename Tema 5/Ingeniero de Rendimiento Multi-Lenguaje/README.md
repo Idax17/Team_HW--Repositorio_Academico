@@ -73,7 +73,7 @@ las 200 repeticiones ocurren dentro del mismo proceso/JVM).
 python3 analyze.py
 ```
 
-Genera `resultados/summary_by_lang.csv`, `resultados/per_file_mean.csv` y las dos gráficas
+Genera `results/summary_by_lang.csv`, `results/per_file_mean.csv` y las dos gráficas
 (`chart_mean_by_lang.png`, `chart_per_file.png`).
 
 ## Nota metodológica sobre "ok"
